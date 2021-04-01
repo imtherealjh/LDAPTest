@@ -22,7 +22,7 @@ public class LDAPController {
                  .and(query().where("cn").is(userRequest.getUsername()))
                  .and(query().where("userPassword").is(userRequest.getPassword())), 
                (AttributesMapper<UserResponse>) attrs -> { 
-                   return new UserResponse((String) attrs.get("cn").get(), (String) attrs.get("sn").get(), (String) attrs.get("mail").get());
+                   return new UserResponse((String) attrs.get("uId").get(), (String) attrs.get("sn").get(), (String) attrs.get("cn").get(), (String) attrs.get("givenName").get(), (String) attrs.get("mail").get());
                 });
         
          return !users.isEmpty() ? users.get(0) : null;

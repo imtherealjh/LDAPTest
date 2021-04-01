@@ -1,29 +1,47 @@
 package com.example.LDAPTest;
 
-import javax.naming.Name;
 import org.springframework.ldap.odm.annotations.Attribute;
-import org.springframework.ldap.odm.annotations.Entry;
 
 public class UserResponse {
-    private @Attribute(name="cn") String username;
-    private @Attribute(name="sn") String name;
-    private @Attribute(name="mail") String email;
+    private @Attribute(name="uId") String uId;
+    private @Attribute(name="sn") String sId;
+    private @Attribute(name="cn") String samAccountName;
+    private @Attribute(name="givenName") String name;
+    private @Attribute(name="mail") String emailAddress;
 
     public UserResponse() {
     }
 
-    public UserResponse(String username, String name, String email) {
-        this.username = username;
+    public UserResponse(String uId, String sId, String samAccountName, String name, String emailAddress) {
+        this.uId = uId;
+        this.sId = sId;
+        this.samAccountName = samAccountName;
         this.name = name;
-        this.email = email;
+        this.emailAddress = emailAddress;
     }
 
-    public String getUsername() {
-        return username;
+    public String getuId() {
+        return uId;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setuId(String uId) {
+        this.uId = uId;
+    }
+
+    public String getsId() {
+        return sId;
+    }
+
+    public void setsId(String sId) {
+        this.sId = sId;
+    }
+
+    public String getSamAccountName() {
+        return samAccountName;
+    }
+
+    public void setSamAccountName(String samAccountName) {
+        this.samAccountName = samAccountName;
     }
 
     public String getName() {
@@ -34,12 +52,12 @@ public class UserResponse {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailAddress() {
+        return emailAddress;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 
 }

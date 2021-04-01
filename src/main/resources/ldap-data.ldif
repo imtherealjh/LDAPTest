@@ -25,8 +25,9 @@ objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
 uid: ben
+givenName: Ben Alex
 cn: Ben Alex
-sn: Alex
+sn: alex
 mail: benalex@gmail.com
 userPassword: $2a$10$c6bSeWPhg06xB1lvmaWNNe4NROmZiSpYhlocU/98HNr2MhIOiSt36
 
@@ -36,6 +37,7 @@ objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
 uid: bob
+givenName: Bob Hamilton
 cn: Bob Hamilton
 sn: Hamilton
 mail: bobhamilton@gmail.com
@@ -47,6 +49,7 @@ objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
 uid: jerry
+givenName: Mouse, Jerry
 cn: Mouse, Jerry
 sn: Mouse
 mail: mousejerry@gmail.com
@@ -58,6 +61,7 @@ objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
 uid: slashguy
+givenName: slash/guy
 cn: slash/guy
 sn: Slash
 mail: slashguy@gmail.com
