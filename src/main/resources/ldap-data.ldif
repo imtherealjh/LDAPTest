@@ -43,6 +43,18 @@ sn: Hamilton
 mail: bobhamilton@gmail.com
 userPassword: bobspassword
 
+dn: uid=testUser,ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+uid: testUser
+givenName: TestUserForDF
+cn: testuser
+sn: df
+mail: testuser@gmail.com
+userPassword: testuserpassword
+
 dn: cn=mouse\, jerry,ou=people,dc=springframework,dc=org
 objectclass: top
 objectclass: person
