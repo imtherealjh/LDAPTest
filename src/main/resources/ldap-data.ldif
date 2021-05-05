@@ -51,9 +51,21 @@ objectclass: inetOrgPerson
 uid: testUser
 givenName: TestUserForDF
 cn: testuser
-sn: df
+sn: dfuser
 mail: testuser@gmail.com
-userPassword: testuserpassword
+userPassword: password
+
+dn: uid=testadmin,ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+uid: testadmin
+givenName: testadminfordf
+cn: testadmin
+sn: dfadmin
+mail: testadmin@gmail.com
+userPassword: password
 
 dn: cn=mouse\, jerry,ou=people,dc=springframework,dc=org
 objectclass: top

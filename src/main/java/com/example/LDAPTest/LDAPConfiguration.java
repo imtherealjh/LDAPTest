@@ -17,7 +17,6 @@ public class LDAPConfiguration {
 
     @Bean
     public LdapTemplate ldapTemplate(){
-        LdapTemplate template = new LdapTemplate(contextSource());
-        return template;
+        return new LdapTemplate(contextSource());
     }
 }
